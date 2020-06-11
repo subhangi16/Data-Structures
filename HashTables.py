@@ -10,7 +10,7 @@ def insert(hash_table, key, value):
     # collision handling using chaining
     hash_table[hash_key].append((key, value))
 
-
+#enumerate allows to loop over something and have automatic counter 
 def search(hash_table, key):
     hash_key = hashing_func(key)
     for c, val in enumerate(hash_table[hash_key]):
